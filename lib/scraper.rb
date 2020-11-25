@@ -3,7 +3,7 @@ require 'open-uri'
 
 html = open("https://flatironschool.com/")
 
-doc = Nokogiri::HTML(open("https://flatironschool.com/"))
-doc.css(".inlineMobileLeft-2Yo002 imageTextBlockGrid2-3jXtmC")
+doc = Nokogiri::HTML(html)
+doc.css(".title-oE5vT4")
 
-puts doc.css(".inlineMobileLeft-2Yo002 imageTextBlockGrid2-3jXtmC")
+puts doc.css(".title-oE5vT4")
